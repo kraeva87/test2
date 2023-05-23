@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+#form {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+#form.inactive {
+    display: none;
+}
+.login_button, .logout {
+    background: red;
+    color: #fff;
+    padding: 5px 20px;
+    width: max-content;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.login_button.locked {
+    background: grey;
+}
+.answer {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+.answer img {
+    max-width: 300px;
+    max-height: 300px;
+}
+.error, .success, .error_locked {
+    display: none;
+    color: red;
+}
+.error.active, .success.active, .error_locked.active {
+    display: block;
+}
